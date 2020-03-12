@@ -8,7 +8,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/', webapi);
 
-// To start server
 const Port = process.env.PORT || 3000;
 app.listen(Port, () => {
     console.log(`server running on port ${Port}`)
