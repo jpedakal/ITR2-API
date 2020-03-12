@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const webapi = require('./routes/api');
 
+// middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
