@@ -6,14 +6,9 @@ const webapi = require('./routes/api');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/',webapi);
+app.use('/', webapi);
 
 const Port = process.env.PORT || 3000;
 app.listen(Port, () => {
-  console.log(`server running on port ${Port}`)
+    console.log(`server running on port ${Port}`)
 });
-
-
-
-
-
