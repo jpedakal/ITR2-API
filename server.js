@@ -7,6 +7,7 @@ const webapi = require('./routes/api');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// added middleware routes
 app.use('/', webapi);
 
 const Port = process.env.PORT || 3000;
